@@ -1,53 +1,172 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Céline Jousse – Charcutier Traiteur</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    .card {
-      max-width: 400px;
-      margin: 50px auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      color: #333;
-    }
-    h2 {
-      margin-top: 5px;
-      color: #777;
-      font-weight: normal;
-    }
-    .contact {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #555;
-    }
-    .contact p {
-      margin: 8px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céline Jousse - Charcutier Traiteur</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: #8b0000; /* Rouge bordeaux */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin: 10px 0 0;
+        }
+        
+        .contact-info {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .contact-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item i {
+            margin-right: 10px;
+            color: #8b0000;
+            width: 20px;
+            text-align: center;
+        }
+        
+        section {
+            margin: 30px 0;
+        }
+        
+        h2 {
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 5px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="card">
-    <h1>Céline Jousse</h1>
-    <h2>Charcutier Traiteur</h2>
-    <div class="contact">
-      <p>📧 celine.jousse.pro@gmail.com</p>
-      <p>📞 06 52 98 75 27</p>
-      <p>📍 3 Rue Maréchal de Lattre de Tassigny<br>76420 Bihorel</p>
-    </div>
-  </div>
+    <header>
+        <div class="container">
+            <h1>Céline Jousse</h1>
+            <p class="subtitle">Charcutier Traiteur</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>celine.jousse.pro@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>06 52 98 75 27</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>3 Rue Maréchal de Lattre de Tassigny, 76420 Bihorel</span>
+            </div>
+        </div>
+        
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Artisan charcutier-traiteur passionnée, je crée des produits de charcuterie de qualité et propose des services de traiteur pour vos événements. Avec des produits frais et des recettes traditionnelles revisitées, je m'engage à vous offrir une expérience culinaire exceptionnelle.</p>
+        </section>
+        
+        <section id="products">
+            <h2>Mes produits</h2>
+            <div class="gallery">
+                <!-- Remplacez les images par vos propres photos -->
+                <img src="https://via.placeholder.com/300x200?text=Produit+1" alt="Produit charcuterie">
+                <img src="https://via.placeholder.com/300x200?text=Produit+2" alt="Plateau traiteur">
+                <img src="https://via.placeholder.com/300x200?text=Produit+3" alt="Spécialité maison">
+            </div>
+        </section>
+        
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Vente de produits de charcuterie artisanale</li>
+                <li>Préparation de plateaux repas sur mesure</li>
+                <li>Service traiteur pour événements privés et professionnels</li>
+                <li>Conseil en pairing vin/charcuterie</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p>Pour toute demande de renseignement ou devis, n'hésitez pas à me contacter par téléphone ou par email.</p>
+            <p>Horaires d'ouverture : Du mardi au samedi, 9h-12h et 14h-19h</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Céline Jousse - Charcutier Traiteur. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
